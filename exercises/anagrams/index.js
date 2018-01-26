@@ -16,7 +16,7 @@ function anagrams(stringA, stringB) {
     return false;
   }
 
-  for (let char in aCharMap) {    // check number of times char is used
+  for (let char in aCharMap) {    // check number of times char is used, iterate of aCharMap and compare it to bCharMap
     if (aCharMap[char] !== bCharMap[char]) {
       return false;
     }
@@ -31,7 +31,7 @@ function buildCharMap (str) {   // helper function
   for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {   // reg exp
     charMap[char] = charMap[char] + 1 || 1;  // assign char to object or plus another
   }
-  
+
   return charMap;
 }
 
