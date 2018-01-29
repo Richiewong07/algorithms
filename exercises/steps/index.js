@@ -18,21 +18,26 @@
 //       '####'
 
 function steps(n) {
-  for (let row = 0; row < n; row++) {
-    let stair = '';
-
-    for (let column = 0; column < n; column++) {
-      if (column <= row) {
-        stair += '#';
-      } else {
-        stair += ' ';
-      }
-    }
-
-    console.log(stair);
-  }
+  
 }
 
 console.log(steps(4))
 
 module.exports = steps;
+
+
+// function steps(n) {
+//   for (let row = 0; row < n; row++) {   // interate from 0 to n through rows
+//     let stair = '';   // new empty string for each row
+//
+//     for (let column = 0; column < n; column++) {  // interate from 0 to n through columns
+//       if (column <= row) {
+//         stair += '#';
+//       } else {
+//         stair += ' ';
+//       }
+//     }
+//
+//     console.log(stair); // one console.log for each row
+//   }
+// }
