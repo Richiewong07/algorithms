@@ -17,7 +17,7 @@
 //       '### '
 //       '####'
 
-function steps(n, row = 0, stair = '') {
+function steps(n, row = 0, stair = '') {  // recursion method
   if (n === row) {
     return;
   }
