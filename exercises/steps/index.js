@@ -39,7 +39,7 @@ function steps(n, row = 0, stair = '') {  // recursion method
   steps(n, row, stair + add);
 }
 
-console.log(steps(4))
+console.log(steps(4));
 
 module.exports = steps;
 
