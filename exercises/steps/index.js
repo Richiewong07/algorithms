@@ -18,7 +18,7 @@
 //       '####'
 
 function steps(n, row = 0, stair = '') {  // recursion method
-  if (n === row) {
+  if (n === row) {    // base case
     return;
   }
 
@@ -33,8 +33,9 @@ function steps(n, row = 0, stair = '') {  // recursion method
   // } else {
   //   stair += ' ';
   // }
+  // steps(n, row, stair);
 
-  const add = stair.length <= row ? '#' : ' ';
+  const add = stair.length <= row ? '#' : ' ';  // ? = true, : = else/false
   steps(n, row, stair + add);
 }
 
