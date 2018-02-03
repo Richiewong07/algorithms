@@ -17,7 +17,7 @@ class Queue {
     return this.data.pop();
   }
 
-  peak() {
+  peek() {
     return this.data[this.data.length - 1];
   }
 }
